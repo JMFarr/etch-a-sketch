@@ -3,10 +3,13 @@
     margin: 0 auto;
 }
 
+#set-squares {
+    margin-bottom: 8px;
+}
+
 #grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .square {
