@@ -27,7 +27,8 @@ function deleteGrid() {
 }
 
 function setSquaresPerSide() {
-    let squaresPerSide = prompt("How many squares per side? (Max: 100)");
+    let squaresPerSide = parseInt(prompt("How many squares per side? (Max: 100)"), 10);
+    if(isNaN(squaresPerSide) || squaresPerSide < 1) return;
     if(squaresPerSide > 100) squaresPerSide = 100;
 
     deleteGrid();
