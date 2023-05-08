@@ -5,7 +5,6 @@ button.addEventListener('click', () => setSquaresPerSide());
 
 function drawGrid(squaresPerSide) {
     const squareDimensions = Math.floor(grid.offsetWidth / squaresPerSide);
-    console.log(squareDimensions);
     for(let i = 0; i < (squaresPerSide ** 2); i++) {
         let square = document.createElement('div');
         square.classList.add('square');
