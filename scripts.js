@@ -17,4 +17,10 @@ function colorSquare(event) {
     event.target.style.backgroundColor = 'grey';
 }
 
+function deleteGrid() {
+    while(container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+}
+
 drawGrid(16);
