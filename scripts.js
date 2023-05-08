@@ -8,13 +8,13 @@ function drawGrid(squaresPerSide) {
         square.classList.add('square');
         square.style.width = squareDimensions + 'px';
         square.style.height = squareDimensions + 'px';
-        square.addEventListener('mouseover', () => colorSquare())
+        square.addEventListener('mouseover', e => colorSquare(e))
         container.appendChild(square);
     }
 }
 
-function colorSquare() {
-    
+function colorSquare(event) {
+    event.target.style.backgroundColor = 'grey';
 }
 
 drawGrid(16);
